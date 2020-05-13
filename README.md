@@ -42,6 +42,8 @@ If it matches the predicate then the request is sent to the filters.
 
 ![image](https://user-images.githubusercontent.com/26468158/81775343-4f13ab00-94b2-11ea-9a48-134e66aead8b.png)
 
+![image](https://user-images.githubusercontent.com/26468158/81776544-9a2ebd80-94b4-11ea-843f-c4d616c30d44.png)
+
 # Sample API Gateway Routing application.yml
 
 ![image](https://user-images.githubusercontent.com/26468158/81774218-aa906980-94af-11ea-8e73-17567476e3ed.png)
