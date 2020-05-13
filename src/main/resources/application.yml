@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: tsp-turkey
+server:
+  port: 8082
