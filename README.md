@@ -2,13 +2,13 @@
 API Gateway using Spring-Cloud-Gateway
 
 # Netflix ZUUL vs Spring-Cloud-Gateway
-Zuul is a blocking API. A blocking gateway api makes use of as many threads as the number of incoming requests. 
-So this approach is more resource intensive. If no threads are available to process incoming request then the request has to wait in queue.
-Spring Cloud Gateway is a non blocking API. When using non blocking API, a thread is always available to process the incoming request. These request are then processed asynchronously in the background 
+Zuul is a <b>blocking API</b>. A blocking gateway api makes use of as many threads as the number of incoming requests. 
+So this approach is more resource intensive. If no threads are available to process incoming request then the request has to wait in queue.<br>
+Spring Cloud Gateway is a <b>non blocking API</b>. When using non blocking API, a thread is always available to process the incoming request.<br> These request are then processed asynchronously in the background 
 and once completed the response is returned. So no incoming request never gets blocked when using Spring Cloud Gateway.
 
 # Spring-cloud-gateway
-An API Gateway acts as a single entry point for a collection of microservices. Any external client cannot access the microservices directly but can access them only through the application gateway
+An API Gateway acts as a single entry point for a collection of microservices. Any external client cannot access the microservices directly but can access them only through the application gateway<br>
 In a real world scenario an external client can be any one of the three-<br>
      *Mobile Application<br>
      *Desktop Application<br>
@@ -18,7 +18,7 @@ In a real world scenario an external client can be any one of the three-<br>
 
 # Spring Cloud Gateway Architecture
 
-Spring Cloud Gateway is API Gateway implementation by Spring Cloud team on top of Spring reactive ecosystem. 
+Spring Cloud Gateway is API Gateway implementation by Spring Cloud team on top of Spring reactive ecosystem.<br> 
 
 It consists of the following building blocks <br>
 -<b>Route</b>: Route the basic building block of the gateway. It consists of :<br>
