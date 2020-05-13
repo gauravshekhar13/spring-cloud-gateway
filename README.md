@@ -20,7 +20,7 @@ In a real world scenario an external client can be any one of the three-<br>
 
 Spring Cloud Gateway is API Gateway implementation by Spring Cloud team on top of Spring reactive ecosystem.<br> 
 
-It consists of the following building blocks <br>
+It consists of the following building blocks:: <br>
 -<b>Route</b>: Route the basic building block of the gateway. It consists of :<br>
       *ID <br>
       *Destination URI <br>
