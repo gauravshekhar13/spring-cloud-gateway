@@ -9,10 +9,10 @@ and once completed the response is returned. So no incoming request never gets b
 
 # Spring-cloud-gateway
 An API Gateway acts as a single entry point for a collection of microservices. Any external client cannot access the microservices directly but can access them only through the application gateway
-In a real world scenario an external client can be any one of the three-
-Mobile Application
-Desktop Application
-External Services or third party Apps
+In a real world scenario an external client can be any one of the three-<br>
+     *Mobile Application
+     *Desktop Application
+     *External Services or third party Apps
 
 ![image](https://user-images.githubusercontent.com/26468158/81772798-651e6d00-94ac-11ea-809c-2f9904a7ac84.png)
 
@@ -34,6 +34,13 @@ It consists of the following building blocks <br>
 When the client makes a request to the Spring Cloud Gateway, the Gateway Handler Mapping first checks if the request matches a route. 
 This matching is done using the predicates. 
 If it matches the predicate then the request is sent to the filters.
+
+# Sample Application flow
+
+* India TSP is a microservice
+* Turkey TSP is a microservice
+
+![image](https://user-images.githubusercontent.com/26468158/81775343-4f13ab00-94b2-11ea-9a48-134e66aead8b.png)
 
 # Sample API Gateway Routing application.yml
 
