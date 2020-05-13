@@ -10,9 +10,9 @@ and once completed the response is returned. So no incoming request never gets b
 # Spring-cloud-gateway
 An API Gateway acts as a single entry point for a collection of microservices. Any external client cannot access the microservices directly but can access them only through the application gateway
 In a real world scenario an external client can be any one of the three-<br>
-     *Mobile Application
-     *Desktop Application
-     *External Services or third party Apps
+     *Mobile Application<br>
+     *Desktop Application<br>
+     *External Services or third party Apps<br>
 
 ![image](https://user-images.githubusercontent.com/26468158/81772798-651e6d00-94ac-11ea-809c-2f9904a7ac84.png)
 
