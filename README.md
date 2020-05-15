@@ -33,7 +33,9 @@ It consists of the following building blocks:: <br>
 
 When the client makes a request to the Spring Cloud Gateway, the Gateway Handler Mapping first checks if the request matches a route. 
 This matching is done using the predicates. 
-If it matches the predicate then the request is sent to the filters.
+If it matches the predicate then the request is sent to the filters.<br>
+*PreFilter = Decides which downstream microservice needs to be called (i.e Service 1 or Service 2), it also modifies the request if required.<br>
+*PostFilter = Post filter will be called once response needs to be send to a calling consumer, it also modifies the response if required.<br>
 
 # Sample Application flow
 
