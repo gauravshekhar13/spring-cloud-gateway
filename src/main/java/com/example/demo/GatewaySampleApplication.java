@@ -27,8 +27,8 @@ public class GatewaySampleApplication {
 	private URI homeEurope;
 	
 	
-	@PostMapping("/callTSP")
-	  public ResponseEntity<?> callGenericTSP(@RequestBody GenericTSP genericTSP,ProxyExchange<Object> proxy) {
+	@PostMapping("/callGeneric")
+	  public ResponseEntity<?> callGenericService(@RequestBody GenericService genericTSP,ProxyExchange<Object> proxy) {
 		
 		ResponseEntity<?> rs = null;
 		if(genericTSP.getTokenId().equals("11")) {
@@ -50,7 +50,7 @@ public class GatewaySampleApplication {
 
 		log.info("in proxy method");
 		log.info("URL is:" + homeAsiaPacific.toString());
-		return proxy.uri(homeAsiaPacific.toString() + "/asiapacific/tspIndia").get();
+		return proxy.uri(homeAsiaPacific.toString() + "/asiapacific/myserviceIndia").get();
 	}
 	
 	@GetMapping("/callChina")
@@ -58,23 +58,23 @@ public class GatewaySampleApplication {
 
 		log.info("in proxy method");
 		log.info("URL is:" + homeAsiaPacific.toString());
-		return proxy.uri(homeAsiaPacific.toString() + "/asiapacific/tspChina").get();
+		return proxy.uri(homeAsiaPacific.toString() + "/asiapacific/myserviceChina").get();
 	}
 	
 	@GetMapping("/callTurkey")
 	public ResponseEntity<?> proxyTurkey(ProxyExchange<Object> proxy) throws Exception {
 
-		System.out.println("in proxy method");
-		System.out.println("URL is:" + homeEurope.toString());
-		return proxy.uri(homeEurope.toString() + "/europe/tspTurkey").get();
+		log.info("in proxy method");
+		log.info("URL is:" + homeEurope.toString());
+		return proxy.uri(homeEurope.toString() + "/europe/myserviceTurkey").get();
 	}
 	
 	@GetMapping("/callGermany")
 	public ResponseEntity<?> proxyGermany(ProxyExchange<Object> proxy) throws Exception {
 
-		System.out.println("in proxy method");
-		System.out.println("URL is:" + homeEurope.toString());
-		return proxy.uri(homeEurope.toString() + "/europe/tspGermany").get();
+		log.info("in proxy method");
+		log.info("URL is:" + homeEurope.toString());
+		return proxy.uri(homeEurope.toString() + "/europe/myserviceGermany").get();
 	}
 
 }

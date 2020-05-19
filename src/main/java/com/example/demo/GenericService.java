@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class GenericTSP {
+public class GenericService {
 
 	//ind/us/turk/
 	private String tokenIdentifier;
