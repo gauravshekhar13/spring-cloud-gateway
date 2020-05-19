@@ -1,15 +1,2 @@
 server:
   port: 8080
-
-spring:
-  cloud:
-    gateway:
-      routes:
-      - id: indiaModule
-        uri: http://localhost:8081/
-        predicates:
-        - Path=/asiapacific/**
-      - id: turkeyModule
-        uri: http://localhost:8082/
-        predicates:
-        - Path=/europe/**
