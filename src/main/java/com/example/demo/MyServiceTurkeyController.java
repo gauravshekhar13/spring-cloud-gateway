@@ -8,31 +8,31 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/europe")
-public class TspTurkeyController {
+public class MyServiceTurkeyController {
 	
-	@GetMapping("/tspTurkey")
+	@GetMapping("/myserviceTurkey")
 public ResponseEntity<?> tspTurkey() {
 		
 		HttpHeaders httpHeaders = new HttpHeaders();
-		httpHeaders.add("custom-header", "TSPTURKEY");
-		TSPVO tspvo1 = new TSPVO();
-		tspvo1.setMessage("This is TSP TURKEY");
+		httpHeaders.add("custom-header", "MYServiceTURKEY");
+		MyServiceVO tspvo1 = new MyServiceVO();
+		tspvo1.setMessage("This is MyService TURKEY");
 		tspvo1.setLocation("TURKEY");
-		tspvo1.setName("TSP");
+		tspvo1.setName("MyService");
 		
-		return new ResponseEntity<TSPVO>(tspvo1,httpHeaders,HttpStatus.OK);
+		return new ResponseEntity<MyServiceVO>(tspvo1,httpHeaders,HttpStatus.OK);
 	}
 	
-	@GetMapping("/tspGermany")	
+	@GetMapping("/myserviceGermany")	
 public ResponseEntity<?> tspGermany() {
 		
 		HttpHeaders httpHeaders = new HttpHeaders();
-		httpHeaders.add("custom-header", "TSPGERMANY");
-		TSPVO tspvo1 = new TSPVO();
-		tspvo1.setMessage("This is TSP Germany");
+		httpHeaders.add("custom-header", "MyServiceGERMANY");
+		MyServiceVO tspvo1 = new MyServiceVO();
+		tspvo1.setMessage("This is MyService Germany");
 		tspvo1.setLocation("Germany");
-		tspvo1.setName("TSP");
+		tspvo1.setName("MyService");
 		
-		return new ResponseEntity<TSPVO>(tspvo1,httpHeaders,HttpStatus.OK);
+		return new ResponseEntity<MyServiceVO>(tspvo1,httpHeaders,HttpStatus.OK);
 	}
 }
