@@ -1,6 +1,6 @@
 package com.example.demo;
 
-public class TSPVO {
+public class MyServiceVO {
 private String name;
 private String location;
 private String message;
