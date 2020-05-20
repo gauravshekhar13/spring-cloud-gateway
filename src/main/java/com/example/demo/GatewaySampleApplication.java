@@ -35,11 +35,11 @@ public class GatewaySampleApplication {
 			
 			log.info("in proxy method");
 			log.info("URL is:" + homeAsiaPacific.toString());
-			rs = proxy.uri(homeAsiaPacific.toString() + "/asiapacific/tspIndia").get();
+			rs = proxy.uri(homeAsiaPacific.toString() + "/asiapacific/myserviceIndia").get();
 		}
 		
 		if(genericTSP.getTokenId().equals("12")) {
-			rs = proxy.uri(homeEurope.toString() + "/europe/tspTurkey").get();
+			rs = proxy.uri(homeEurope.toString() + "/europe/myserviceTurkey").get();
 		}
 		
 	    return rs;
