@@ -5,7 +5,9 @@
 * An API gateway is a software application between a client and a set of backend microservices. 
 * The API Gateway serves as a reverse proxy to accept API calls from the client application, forwarding this traffic to the appropriate service.
 * The gateway provides a single endpoint or URL for the client apps and then internally maps the requests to a group of internal microservices.
+
 ![img.png](src/main/resources/img.png)
+
 ## Netflix ZUUL vs Spring-Cloud-Gateway
 * Zuul is a <b>blocking API</b>. - A blocking gateway api makes use of as many threads as the number of incoming requests. 
 So this approach is more resource intensive. If no threads are available to process incoming request then the request has to wait in queue.<br>
